@@ -92,8 +92,6 @@ object FrmPrincipal: TFrmPrincipal
     object TabSheet2: TTabSheet
       Caption = 'Aba 2'
       ImageIndex = -1
-      ExplicitWidth = 685
-      ExplicitHeight = 332
       object Label2: TLabel
         Left = 424
         Top = 56
@@ -149,10 +147,8 @@ object FrmPrincipal: TFrmPrincipal
         Height = 41
         Align = alBottom
         TabOrder = 4
-        ExplicitTop = 291
-        ExplicitWidth = 685
         object Button3: TButton
-          Left = 609
+          Left = 721
           Top = 1
           Width = 75
           Height = 39
@@ -180,10 +176,6 @@ object FrmPrincipal: TFrmPrincipal
     object TabSheet3: TTabSheet
       Caption = 'Aba 3'
       ImageIndex = 2
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object Label3: TLabel
         Left = 40
         Top = 45
@@ -219,8 +211,8 @@ object FrmPrincipal: TFrmPrincipal
       end
       object Panel3: TPanel
         Left = 0
-        Top = 291
-        Width = 685
+        Top = 306
+        Width = 797
         Height = 41
         Align = alBottom
         TabOrder = 3

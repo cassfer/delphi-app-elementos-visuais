@@ -14,6 +14,10 @@ type
     Label1: TLabel;
     lblDataHora: TLabel;
     Image1: TImage;
+    Timer1: TTimer;
+    procedure Timer1Timer(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
   public
@@ -26,5 +30,21 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TFrmDataHora.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  Timer1.Enabled := False;
+end;
+
+procedure TFrmDataHora.FormShow(Sender: TObject);
+begin
+  Timer1.Enabled := True;
+  lblDataHora.Caption := FormatDateTime('dd/mm/yyyy hh:mm:ss', now);
+end;
+
+procedure TFrmDataHora.Timer1Timer(Sender: TObject);
+begin
+  lblDataHora.Caption := FormatDateTime('dd/mm/yyyy hh:mm:ss', now);
+end;
 
 end.
